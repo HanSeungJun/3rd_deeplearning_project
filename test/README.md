@@ -1,2 +1,5 @@
-# 3rd_deeplearning_project
-Human-Robot Interaction model with ros2 turtlesim
+# 3차 딥러닝 프로젝트를 만들기 위한 기술성 검토 공간입니다.
+
+## 1. Human Pose Estimation을 활용한 키입력 게임
+
+## 2. 두더지 잡기 게임
