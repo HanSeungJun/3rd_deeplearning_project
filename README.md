@@ -1,15 +1,21 @@
 # Human-Robot Interaction System with ROS2
-- (대표 이미지.gif)
+![3rd_final](https://github.com/HanSeungJun/calculator_pyqt/assets/81555330/c1faacbb-51a2-4588-b169-8337f4d90010)
 
 ## 시스템 구성
-- (시스템 구성도 이미지.jpg)
+![Screenshot from 2023-12-18 18-06-32](https://github.com/HanSeungJun/calculator_pyqt/assets/81555330/6b7b17df-3353-4d49-8622-23b01e5c4266)
+
+## 시퀀스 다이어그램
+### 직진 케이스
+![Screenshot from 2023-12-18 18-07-20](https://github.com/HanSeungJun/calculator_pyqt/assets/81555330/4c751f0b-7f6b-45ae-a65d-5a734c425fb6)
+
+### 직진 불가 케이스
 
 ## 팀원 소개 및 역할
 |구분|이름|역할|
 |---|---|---|
-|팀장|한승준|전체 시스템 구성도 제작, Hands landmak 머신러닝 모델 제작 및 성능분석, 주행로봇 제작, 모바일 앱 제작|
-|팀원|김창미|Hands landmak 딥러닝 모델 제작 및 성능분석|
-|팀원|박한규|Semantic segementation 모델(yolov5 & yolov8) 제작 및 성능분석|
+|팀장|한승준|전체 시스템 구성도 제작, 주행로봇 제작, Ursina: 3D simulation game 제작, 라인 및 장애물 인식 모듈 제작|
+|팀원|김창미|제스처 인식 인공지능 모델 제작 및 성능분석(KNN, LSTM, RNN), 제스처 인식 모듈 구현, 시퀀스 다이어그램 제작|
+|팀원|박한규|Semantic segementation 모델(yolov5 & yolov8) 제작|
 
 ## 프로젝트 기간
 2023.11.25 ~ 2023.12.14
