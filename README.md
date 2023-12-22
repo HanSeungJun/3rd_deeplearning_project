@@ -2,7 +2,7 @@
 ![3rd_final](https://github.com/HanSeungJun/calculator_pyqt/assets/81555330/c1faacbb-51a2-4588-b169-8337f4d90010)
 
 ## 시스템 구성
-![Screenshot from 2023-12-18 18-06-32](https://github.com/HanSeungJun/calculator_pyqt/assets/81555330/6b7b17df-3353-4d49-8622-23b01e5c4266)
+![image](https://github.com/HanSeungJun/calculator_pyqt/assets/81555330/13648217-e761-4c88-aa39-ade0f8552f87)
 
 ## 시퀀스 다이어그램
 ### 직진 케이스
