@@ -42,18 +42,14 @@
 ### Human-Robot Interaction System with ROS2
 
 1. 사람의 제스처(손, 몸)를 인식하고 주행로봇에게 전달한다.
-2. 라인 인식 및 장애물을 인식하고 직진, 좌회전, 우회전 여부를 주행로봇에게 전달한다.
-3. ROS2 gazebo simulation을 통해 1번과 2번을 검증을 하고 실제 주행로봇에게 전달한다.
+2. 주행로봇은 라인 및 장애물을 인식하고 직진, 좌회전, 우회전 가능 여부를 판단할 수 있다.
+3. ROS2 gazebo simulation을 통해 1번과 2번을 검증을 해보고 실제 주행로봇에게 전달해본다.
 
 ## 프로젝트 목표
-1. 머신러닝과 딥러닝 모델 직접 만들기
-   - 직접 데이터셋 수집
-   - 머신러닝, 딥러닝 모델 학습
-   - 모델 간의 성능 비교 및 평가
-    
-2. ROS2 네트워크 통신이해
-   - 노드 생성 및 토픽 발행
-   - 구독 방법
+머신러닝과 딥러닝 모델 직접 만들기
+- 데이터셋 수집
+- 머신러닝, 딥러닝 모델 학습
+- 모델 간의 성능 비교 및 평가
 
 ## Hand landmarks detection
 ### Mediapipe
@@ -71,38 +67,13 @@ Yolov5
 Yolov8
 - contents
 
-## Enviroment
+## Requirement
+```
+ursina
+ultralytics
+opencv-python
 
-Hand landmark detect system
 ```
-dependencies:
-  - pip=20.2.2  
-  - python=3.7.7
-  - numpy=1.19.1
-  - pandas=1.1.4
-  - plyfile=0.7.2
-  - pyyaml=5.3.1
-  - tqdm=4.54.1
-  - matplotlib=3.3.3 
-  - pip:
-    - opencv-python==4.2.0.34
-    - mediapipe==0.8.4.2
-    - addict==2.4.0
-    - sklearn==0.0
-```
-
-Line detect system
-```
-```
-
-Minecraft simulation
-```
-```
-
-Gazebo simulation
-```
-```
-
 ## How to run?
 - Download
 ```
@@ -116,7 +87,13 @@ $ cd hands_detect_system
 
 - Line detect system
 ```
-$ cd line_detect_system
+$ cd yolov5
+
+# 내장,외부 웹캠 source = 0, 1, 2 ...
+$ yolo segment predict model=~/yolov5/runs/segment/train/weights/best.pt source=0
+
+# 동영상 
+$ yolo segment predict model=~/yolov5/runs/segment/train/weights/best.pt source=<vdeio path> 
 ```
 
 - Minecraft simulation
@@ -128,13 +105,6 @@ $ pip install ursina
 $ python3 menu.py 
 ```
 
-- gazebo simulation
-```
-$ cd gazebo_simulation
-
-$ colcon build
-```
-
 ## Demo video
 <p align=center>
   <a href="https://youtu.be/fBUlsuLVDTE?si=vuUHYnaWxRCwBf6v">
@@ -144,14 +114,6 @@ $ colcon build
   <a href="https://youtu.be/fBUlsuLVDTE?si=vuUHYnaWxRCwBf6v">1차 데모영상</a>
 </p>
 
-## 아쉬운 점
+## 회고
 -
--
-
-## Reference
--
--
-
-## License
-- 
 -
