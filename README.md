@@ -5,9 +5,9 @@
 > 이 저장소는 팀 프로젝트 중 **제스처 인식 파트**(데이터 수집 · RNN 학습 · 검증)를 담고 있다.
 > 전체 시스템 저장소: [addinedu-ros-3rd/deeplearning-repo-1](https://github.com/addinedu-ros-3rd/deeplearning-repo-1)
 
-**▶ [데모 영상](https://youtu.be/fBUlsuLVDTE)**
+![시연](docs/overview.gif)
 
-![시스템 구성](https://github.com/HanSeungJun/calculator_pyqt/assets/81555330/13648217-e761-4c88-aa39-ade0f8552f87)
+**▶ [데모 영상](https://youtu.be/fBUlsuLVDTE)**
 
 ---
 
@@ -18,6 +18,14 @@
 3. Ursina 3D 시뮬레이션과 ROS2 Gazebo에서 검증한 뒤 실제 주행로봇으로 옮긴다
 
 **기간** 2023.11.25 ~ 2023.12.14 · **인원** 3명
+
+### 시스템 구성
+
+![시스템 구성](docs/system.png)
+
+### 시퀀스 다이어그램 (직진 케이스)
+
+![시퀀스 다이어그램](docs/sequence.png)
 
 | 구분 | 이름 | 역할 |
 |---|---|---|
